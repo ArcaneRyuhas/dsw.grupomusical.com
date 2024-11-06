@@ -129,3 +129,89 @@ img {
 .dot.active {
     background-color: #717171;
 }
+
+footer{
+    background:  rgb(248, 91, 56);
+    margin-top: 50px;
+    padding: 20px;
+    text-align: center;
+    font-weight: bold;
+    width: 120%;
+
+}
+
+header {
+    background: linear-gradient(135deg, #4b79a1, #283e51);
+    color: white;
+    padding: 20px;
+    text-align: center;
+    font-size: 2em;
+    font-weight: bold;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    top: 0;
+    z-index: 1000;
+}
+
+/* Estilo del menú de navegación */
+nav {
+    background: #333;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 1.1em;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+}
+
+nav ul li a::before,
+nav ul li a::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 2px;
+    background: #4b79a1;
+    transition: all 0.4s;
+}
+
+nav ul li a::before {
+    top: 0;
+    left: 0;
+}
+
+nav ul li a::after {
+    bottom: 0;
+    right: 0;
+}
+
+nav ul li a:hover::before,
+nav ul li a:hover::after {
+    width: 100%;
+}
+
+nav ul li a:hover {
+    color: #4b79a1;
+    transform: translateY(-2px);
+}
+
+/* Resalta el enlace actual (opcional) */
+nav ul li a.active {
+    color: #4b79a1;
+    border-bottom: 2px solid #4b79a1;
+}
